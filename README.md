@@ -8,7 +8,14 @@ Touple-> Instruction -> Line -> Function -> Thread -> Process -> Application -> 
 
 
 Main topics in docker are
+
 Installation docker client and docker server
+redhat package installer is yum and dnf
+
+ubuntu package installer is opt and apt-get
+
+alpine package installer apk
+
 
 Create context between them from client side
 
