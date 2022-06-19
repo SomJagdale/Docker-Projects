@@ -18,3 +18,5 @@ line 3
 
 this is for link for example [docker cheat sheet](https://www.docker.com/wp-content/uploads/2022/03/docker-cheat-sheet.pdf)
 this is for image ![image](D:\Old HP Laptop\revadanda beach\beach/jpg)
+
+this is image <imag src=pp.jpg>
