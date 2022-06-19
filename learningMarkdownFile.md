@@ -20,3 +20,4 @@ this is for link for example [docker cheat sheet](https://www.docker.com/wp-cont
 this is for image ![image](D:\Old HP Laptop\revadanda beach\beach/jpg)
 
 this is image <imag src=pp.jpg>
+ 
