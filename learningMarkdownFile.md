@@ -22,3 +22,11 @@ this is for image ![image](D:\Old HP Laptop\revadanda beach\beach/jpg)
 this is image 
 <img src="beach.png">
  
+Font sizes done
+Boldness done
+Italic done
+paragraph done
+list done
+highlight done
+web link done
+image done
