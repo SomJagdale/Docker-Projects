@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<project name="SorafExe" default="help">
+        <property name="version"                    value="9.0"/>
+
+        <property name="src.dir"                    value=".."/>
+        <property name="build.dir"                  value="../../../../../../../../RoamwareBuild/build/"/>
+        <property name="dest.dir"                   value="${build.dir}/ntr90/ntr90/container/images/soraf"/>
+		<property name="external.dir"               value="../../../../../../../platform/external/5.0/"/>
+		<property name="cont.resource.dir"          value="${external.dir}/container"/>
+
+
+        <property environment="env"/>
+
+        <!--
+        ======================================================================================
+        TOP LEVEL TASKS AND TARGETS
+        ======================================================================================
+        -->
+        <target name="make" depends="clean,Compile">
+        </target>
+
+        <target name="clean">
+                <echo message="Removing all build files ....."/>
+                <delete dir="${build.dir}/ntr90/ntr90/container"/>
+        </target>
+
+
+        <target name="Compile">
+                <echo level="info" message="Compiling classes ....."/>
+
+				<mkdir dir="${build.dir}/ntr90/ntr90/container" />
+                <mkdir dir="${build.dir}/ntr90/ntr90/container/images" />
+                <mkdir dir="${build.dir}/ntr90/ntr90/container/images/soraf" />
+                <mkdir dir="${dest.dir}/build" />
+                <mkdir dir="${dest.dir}/docker" />
+                <mkdir dir="${dest.dir}/docker/container-resources" />
+
+                <copy overwrite="true" todir="${dest.dir}/docker" file="${src.dir}/docker/Dockerfile.ubi8"/>
+                <copy overwrite="true" todir="${dest.dir}/docker" file="${src.dir}/docker/prepare-image.sh"/>
+                <copy overwrite="true" todir="${dest.dir}/docker" file="${src.dir}/docker/startup.sh"/>
+                <copy overwrite="true" todir="${dest.dir}/build" file="${src.dir}/build/build.xml"/>
+				<copy overwrite="true" todir="${dest.dir}/docker/container-resources" file="${cont.resource.dir}/resources/openjdk-11.0.1_linux-x64_bin.tar.gz"/>
+                
+				<chmod file="${dest.dir}/docker/startup.sh" perm="ug+x"/>
+                <chmod file="${dest.dir}/docker/prepare-image.sh" perm="ug+x"/>
+
+                <echo level="info" message="Done."/>
+        </target>
+
+</project>
