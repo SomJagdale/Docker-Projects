@@ -1,0 +1,15 @@
+version:  "3.8"
+services:
+  sorafapp:
+    image: soraf-ubi8-rel:Q220703
+    container_name: sorafc
+    ports:
+      - "18080:8080"
+      - "18443:8443"
+      - "26084:16084"
+      - "19139:9139"
+      - "26439:16439"
+    volumes:
+      - soraf-vol:/opt/Roamware/logs
+volumes:
+  soraf-vol:
