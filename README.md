@@ -121,3 +121,4 @@ $docker pause c1
 $docker unpause c1
 $docker logs c1
 $docker exec -it c1 sh 
+$docker attache c1
