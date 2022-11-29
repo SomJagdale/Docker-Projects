@@ -91,4 +91,33 @@ Services
 
 
 
- 
+
+
+
+
+
+
+Docker Commands 
+$docker --help
+$docker --verion 
+$docker --format {{json .}}
+$docker info
+$docker pull --help
+$docker pull ubantu:20.10
+$docker pull redis
+$docker images 
+$docker run redis
+$docker ps 
+$docker ps -a 
+$docker run -it redis
+$docker run -d redis
+$docker run -it --name=mycontaier -d redis 
+$docker stats
+$docker search redis 
+$docker start c1
+$docker stop c1
+$docker restart c1
+$docker pause c1
+$docker unpause c1
+$docker logs c1
+$docker exec -it c1 sh 
