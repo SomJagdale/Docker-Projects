@@ -16,4 +16,33 @@ Solution - VM and Containers
   - No need to re-install everything, just docker 
   - Enviroment isolation 
 
+Important Terms
+Images 
+ - A template used to build Container 
+ - Similer to snapshot of in a VM
+ - It contains application and dependent libraries and envirnonment 
+
+Containers
+ -  A Run time instance of Contaner Image 
+
+Docker file 
+ - Contains commands to requred to assemble the an image
+ - You can build images from this
+ - COntains details of app and dependent libs and base image
+
+
+Docker Hub 
+ - Place to store your images 
+ - To share those to world 
+
+Daemon 
+ -  Listne to events from the manager 
+
+
+Registry 
+ -  Stateless, highly scalable server 
+ -  It stores and distribute docker images 
+ -  Used privately 
+
+
 
