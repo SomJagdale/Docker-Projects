@@ -45,4 +45,13 @@ Registry
  -  Used privately 
 
 
-
+Docker features 
+ -  Re-use
+ -  Shred library 
+ -  Dependancy Managment 
+ -  OS independent 
+ -  Scalable 
+ -  Flexible 
+ -  Versioning
+ -  Secure 
+ -  
